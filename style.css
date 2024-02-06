@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Montserrat&family=Poppins&family=Roboto&family=Space+Grotesk&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    text-transform: capitalize;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 2% auto;
+    height: 85px;
+    border-radius: 27px;
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2)
+    0px 7px 29px 0px;
+}
+.logo{
+    margin-left: 5%;
+    color: purple;
+    font-size: 30px;
+}
+.navbar ul{
+    margin-right: 3%;
+}
+.navbar li{
+    display: inline-block;
+    padding: 10px 8px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #777;
+    font-size: 20px;
+    padding: 4px 4px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: purple;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.burger{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 13%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 33px;
+    color: purple;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    width: 38%;
+}
+.heading h1{
+    padding: 1% 0%;
+    font-size: 45px;
+}
+.heading h1 span{
+    color: #6A5ACD;
+    display: block;
+}
+.para{
+    color: #777;
+}
+.para_2{
+    font-size: 13px;
+    color: #777;
+    padding-right: 20%;
+}
+.btn{
+    padding: 10px 12px;
+    margin-top: 2%;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: purple;
+}
+.btn:hover{
+    background-color: orange;
+}
+.img{
+    width: 38%;
+}
+.img img{
+    width: 100%;
+    height: 550px;
+}
+/* ________features____ */
+.features{
+    text-align: center;
+    background-color: #D5B0FF;
+    padding: 4% 0%;
+}
+.main-h{
+    font-size: 35px;
+}
+.box{
+    display: flex;
+    margin: auto;
+    width: 75%;
+}
+.boxes{
+    background-color: white;
+    margin: 2% 2%;
+    padding: 2% 4%;
+    border-radius: 20px;
+}
+.boxes p{
+    font-size: 12px;
+}
+.boxes h1{
+    padding: 2% 0;
+}
+.box div:nth-child(2){
+    background-color: purple;
+    color: white;
+}
+.box div:nth-child(2) p{
+    color: white;
+}
+.box div:nth-child(2) i{
+    background-color: orange;
+}
+.boxes i{
+    background-color: #6A5ACD;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+}
+/* ______services______ */
+.services{
+    text-align: center;
+    margin: 4% 0;
+}
+.ser_box{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+/* _______testimonial____ */
+.testimonial{
+    background-color: #FF007F;
+    width: 40%;
+    padding: 30px 18px;
+    display: flex;
+    margin: 2% auto;
+    flex-direction: column;
+}
+.testimonial h3{
+    color: white;
+    padding: 2% 0%;
+}
+.testimonial img{
+    width: 9%;
+}
+.testimonial .user{
+    display: flex;
+    align-items: center;
+}
+.user img{
+    border-radius: 50%;
+    width: 13%;
+}
+.user h4{
+    padding-left: 12px;
+}
+.user h4 span{
+    display: block;
+    color: white;
+}
+/* ________about____ */
+.about_para{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: 3% auto;
+}
+.about_ser{
+    width: 40%;
+    text-align: left;
+}
+.contact_link{
+    width: 40%;
+}
+.contact_link i{
+    display: block;
+    padding: 1%;
+    font-size: 25px;
+    color: #FF007F;
+}
+/* ________contact_____ */
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4% 0%;
+    background-color: #fff3f9;
+}
+.links{
+    width: 80%;
+    margin: auto;
+}
+.links i{
+    padding: 12px;
+    font-size: 20px;
+    background-color: orange;
+    color: white;
+    margin: 3% 1% 0 1%;
+    cursor: pointer;
+}
+.links i:hover{
+    background-color: #FF007F;
+}
+footer{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+}
+@media only screen and (max-width:870px){
+    .burger{
+        display: block;
+    }
+    .navbar{
+        height: 370px;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: white;
+        transition: all 0.9s ease-out;
+        position: relative;
+        overflow: hidden;
+    }
+    .logo{
+        margin: 0%;
+    }
+    .navbar li{
+        display: block;
+    }
+    .h-class{
+        height: 78px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .main{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .img,.heading{
+        width: 70%;
+    }
+    .box{
+        flex-direction: column;
+        width: 45%;
+    }
+    .boxes{
+        padding: 8% 4%;
+    }
+}
+@media only screen and (max-width:650px){
+    .img img{
+        height: 430px;
+    }
+    .ser_box {
+        flex-direction: column;
+        width: 25%;
+    }
+    .about_para{
+        flex-direction: column;
+    }
+    .contact_link {
+        width: 100%;
+    }
+    .about_ser {
+        width: 90%;
+      margin-top: 5%;
+    }
+}
